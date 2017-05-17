@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/personal_title"
+        layout="@layout/app_base_title"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="212px"
+            android:background="@color/red_0"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.qc.qbhousesclient.ui.view.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="220px"
+                android:layout_height="220px"
+                android:src="@drawable/default_head_w"
+                imagecontrol:border_outside_color="@color/red_0"
+                imagecontrol:border_thickness="14px"/>
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28px"
+                android:text="@string/nickname"
+                android:textSize="40px"/>
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="@string/app_name"
+                android:textSize="40px"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="166px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_login"
+        android:gravity="center"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="62px"/>
+
+</RelativeLayout>

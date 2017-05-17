@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="895px"
+            android:layout_height="165px"
+            android:background="@drawable/bg_red_radius5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/ticket_id"
+                android:paddingStart="180px"
+                android:textSize="48px"/>
+
+            <ImageView
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_marginEnd="36px"
+                android:src="@drawable/ticket_search"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="295px"
+            android:layout_height="165px"
+            android:layout_marginStart="38px"
+            android:background="@drawable/bg_red_radius5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="60px"
+                android:text="@string/state"
+                android:textColor="@color/red_0"
+                android:textSize="58px"/>
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="24px"
+                android:src="@drawable/state_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="295px"
+            android:layout_height="522px"
+            android:layout_marginStart="38px"
+            android:background="@drawable/bg_red_radius5"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="165px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150px"
+                    android:layout_height="60px"
+                    android:text="@string/state"
+                    android:textColor="@color/red_0"
+                    android:textSize="58px"/>
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="24px"
+                    android:src="@drawable/state_arrow"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray_2"
+        android:dividerHeight="18dp"/>
+
+</LinearLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_base_title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/lyt_buy_one"
+                android:layout_width="1150px"
+                android:layout_height="190px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100px"
+                android:background="@drawable/bg_pay_type_unselect"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/buy_one_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="425px"
+                    android:text="@string/buy_one"
+                    android:textColor="@color/red_2"
+                    android:textSize="51px"/>
+
+                <TextView
+                    android:id="@+id/buy_one_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/buy_one_number"
+                    android:layout_marginStart="40px"
+                    android:layout_toEndOf="@+id/buy_one_number"
+                    android:text="@string/buy_one_price"
+                    android:textColor="@color/gray_1"
+                    android:textSize="38px"/>
+
+                <TextView
+                    android:id="@+id/buy_one_before"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/buy_one_price"
+                    android:layout_marginStart="16px"
+                    android:layout_toEndOf="@+id/buy_one_price"
+                    android:text="@string/buy_one_price_before"
+                    android:textColor="@color/gray_0"
+                    android:textSize="24px"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_buy_twenty"
+                android:layout_width="315px"
+                android:layout_height="220px"
+                android:layout_alignStart="@+id/lyt_buy_one"
+                android:layout_below="@+id/lyt_buy_one"
+                android:layout_marginTop="80px"
+                android:background="@drawable/bg_pay_type_selector">
+
+                <TextView
+                    android:id="@+id/buy_twenty_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:text="@string/buy_twenty"
+                    android:textColor="@color/red_2"
+                    android:textSize="51px"/>
+
+                <TextView
+                    android:id="@+id/buy_twenty_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buy_twenty_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:text="@string/buy_twenty_price"
+                    android:textColor="@color/gray_1"
+                    android:textSize="28px"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_buy_thirty"
+                android:layout_width="315px"
+                android:layout_height="220px"
+                android:layout_alignTop="@+id/lyt_buy_twenty"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_pay_type_selector">
+
+                <TextView
+                    android:id="@+id/buy_thirty_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:text="@string/buy_twenty"
+                    android:textColor="@color/red_2"
+                    android:textSize="51px"/>
+
+                <TextView
+                    android:id="@+id/buy_thirty_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buy_thirty_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:text="@string/buy_twenty_price"
+                    android:textColor="@color/gray_1"
+                    android:textSize="28px"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_buy_forty"
+                android:layout_width="315px"
+                android:layout_height="220px"
+                android:layout_alignEnd="@+id/lyt_buy_one"
+                android:layout_alignTop="@+id/lyt_buy_thirty"
+                android:background="@drawable/bg_pay_type_selector">
+
+                <TextView
+                    android:id="@+id/buy_forty_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:text="@string/buy_twenty"
+                    android:textColor="@color/red_2"
+                    android:textSize="51px"/>
+
+                <TextView
+                    android:id="@+id/buy_forty_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buy_forty_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:text="@string/buy_twenty_price"
+                    android:textColor="@color/gray_1"
+                    android:textSize="28px"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_buy_fifty"
+                android:layout_width="315px"
+                android:layout_height="220px"
+                android:layout_alignStart="@+id/lyt_buy_twenty"
+                android:layout_below="@+id/lyt_buy_twenty"
+                android:layout_marginTop="90px"
+                android:background="@drawable/bg_pay_type_selector">
+
+                <TextView
+                    android:id="@+id/buy_fifty_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:text="@string/buy_twenty"
+                    android:textColor="@color/red_2"
+                    android:textSize="51px"/>
+
+                <TextView
+                    android:id="@+id/buy_fifty_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buy_fifty_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:text="@string/buy_twenty_price"
+                    android:textColor="@color/gray_1"
+                    android:textSize="28px"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_buy_sixty"
+                android:layout_width="315px"
+                android:layout_height="220px"
+                android:layout_alignStart="@+id/lyt_buy_thirty"
+                android:layout_alignTop="@+id/lyt_buy_fifty"
+                android:background="@drawable/bg_pay_type_selector">
+
+                <TextView
+                    android:id="@+id/buy_sixty_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:text="@string/buy_twenty"
+                    android:textColor="@color/red_2"
+                    android:textSize="51px"/>
+
+                <TextView
+                    android:id="@+id/buy_sixty_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buy_sixty_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:text="@string/buy_twenty_price"
+                    android:textColor="@color/gray_1"
+                    android:textSize="28px"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_other"
+                android:layout_width="315px"
+                android:layout_height="220px"
+                android:layout_alignStart="@+id/lyt_buy_forty"
+                android:layout_alignTop="@+id/lyt_buy_fifty"
+                android:background="@drawable/bg_pay_type_selector">
+
+                <EditText
+                    android:id="@+id/buy_other_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="124px"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/buy_twenty"
+                    android:textColor="@color/red_2"
+                    android:textSize="51px"/>
+
+                <TextView
+                    android:id="@+id/buy_other_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buy_other_number"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/buy_twenty_price"
+                    android:textColor="@color/gray_1"
+                    android:textSize="28px"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_recharge"
+                android:layout_width="1075px"
+                android:layout_height="180px"
+                android:layout_below="@+id/lyt_buy_sixty"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="125px"
+                android:background="@drawable/bg_pay_type_select"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:src="@drawable/qb_money_w"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="52px"
+                    android:gravity="center"
+                    android:text="@string/want_recharge"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="126px"
+        android:layout_height="126px"
+        android:layout_marginStart="30px"
+        android:layout_marginTop="170px"
+        android:background="@drawable/bg_border"
+        android:src="@drawable/iv_slide_menu"
+        android:visibility="gone"/>
+
+</FrameLayout>

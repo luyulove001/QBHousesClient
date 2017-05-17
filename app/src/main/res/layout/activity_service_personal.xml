@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/service_main_title"
+        layout="@layout/app_base_title"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service_main_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:background="@color/red_0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228px"
+                android:layout_marginTop="134px"
+                android:text="@string/nickname"
+                android:textColor="@color/white"
+                android:textSize="66px"/>
+
+            <TextView
+                android:id="@+id/bonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/nickname"
+                android:layout_alignBottom="@+id/nickname"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="228px"
+                android:text="@string/nickname"
+                android:textColor="@color/white"
+                android:textSize="66px"/>
+
+            <TextView
+                android:id="@+id/phone_numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nickname"
+                android:layout_below="@+id/nickname"
+                android:text="TextView"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bonus"
+                android:layout_below="@+id/bonus"
+                android:text="TextView"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <com.qc.qbhousesclient.ui.view.CircleImageView
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="132px"
+            android:src="@drawable/default_head_w"
+            imagecontrol:border_outside_color="@color/red_0"
+            imagecontrol:border_thickness="14px"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="166px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_login"
+        android:gravity="center"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="62px"/>
+</RelativeLayout>

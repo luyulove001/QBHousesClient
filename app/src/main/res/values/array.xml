@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>SlideMenu Test Data1</item>
+        <item>SlideMenu Test Data2</item>
+        <item>SlideMenu Test Data3</item>
+        <item>SlideMenu Test Data4</item>
+        <item>SlideMenu Test Data5</item>
+        <item>SlideMenu Test Data6</item>
+        <item>SlideMenu Test Data7</item>
+        <item>SlideMenu Test Data8</item>
+        <item>SlideMenu Test Data9</item>
+        <item>SlideMenu Test Data10</item>
+        <item>SlideMenu Test Data11</item>
+        <item>SlideMenu Test Data12</item>
+        <item>SlideMenu Test Data13</item>
+        <item>SlideMenu Test Data14</item>
+        <item>SlideMenu Test Data15</item>
+    </string-array>
+
+    <string-array name="store_menu">
+        <item>首 页</item>
+        <item>票 劵</item>
+        <item>充值记录</item>
+        <item>个人中心</item>
+    </string-array>
+    <string-array name="servicer_menu">
+        <item>首 页</item>
+        <item>机 器</item>
+        <item>收 入</item>
+        <item>营业额</item>
+        <item>个人中心</item>
+    </string-array>
+</resources>
